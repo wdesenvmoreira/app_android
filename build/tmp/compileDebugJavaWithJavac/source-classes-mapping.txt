@@ -1,0 +1,6 @@
+com/example/tarefaii/BuildConfig.java
+ com.example.tarefaii.BuildConfig
+com/example/tarefaii/MinhaLocalizacaoListener.java
+ com.example.tarefaii.MinhaLocalizacaoListener
+com/example/tarefaii/MainActivity.java
+ com.example.tarefaii.MainActivity

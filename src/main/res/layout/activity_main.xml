@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_error"
+            android:onClick="reset"
+            android:text="Reset"/>
+        <TextView
+            android:id="@+id/txtPontoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ponto A"
+            android:textAligment="center"
+            android:backgrountTint="@color/black"
+            android:textSize="18sp"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                <Button
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/holo_orange_light"
+                    android:onClick="verPontoA"
+                    android:text="ver"
+                    tools:ignore="OnClick" />
+                <Button
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="lerPontoA"
+                    android:text="Ler"
+                    tools:ignore="OnClick" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edtPtoA"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:ems="10"
+                android:inputType="textPersonName|textMultiLine"
+                android:maxLines="5"
+               android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ponto B"
+                android:textAligment="center"
+                android:backgrountTint="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="215dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="219dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_orange_light"
+                        android:onClick="verPontoB"
+                        android:text="ver"
+                        tools:ignore="OnClick" />
+                    <Button
+                        android:layout_width="219dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="lerPontoB"
+                        android:text="Ler"
+                        tools:ignore="OnClick" />
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/edtPtoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:ems="10"
+                    android:inputType="textPersonName|textMultiLine"
+                    android:maxLines="5"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+        </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
+                android:onClick="calcularDistancia"
+                android:text="Distância" />
+
+        <WebView
+            android:id="@+id/webv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
