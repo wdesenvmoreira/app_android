@@ -57,7 +57,8 @@
                 android:inputType="textPersonName|textMultiLine"
                 android:maxLines="5"
                android:textAlignment="center"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:gravity="center_horizontal" />
         </LinearLayout>
 
         <TextView
@@ -99,7 +100,8 @@
                     android:inputType="textPersonName|textMultiLine"
                     android:maxLines="5"
                     android:textAlignment="center"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:gravity="center_horizontal" />
 
         </LinearLayout>
 
